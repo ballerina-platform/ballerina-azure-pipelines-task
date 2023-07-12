@@ -1,0 +1,36 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "0788b6ae-cdb6-4ac1-b150-60547f195086",
+    "name": "UseBallerina",
+    "friendlyName": "Use Ballerina ecosystem",
+    "description": "Setup a Ballerina environment and add it to the PATH",
+    "helpUrl": "https://github.com/ballerina-platform/ballerina-azure-pipelines-task",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "ballerina",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Use Ballerina $(version)",
+    "inputs": [
+        {
+            "name": "version",
+            "type": "string",
+            "label": "Version",
+            "defaultValue": "2201.6.x",
+            "required": true,
+            "helpMarkDown": "Ballerina Version use. Example: 2201.6.0"
+        }
+    ],
+    "execution": {
+        "Node16": {
+            "target": "index.js"
+        }
+    },
+    "messages": {
+        "UnexpectedOS": "Unexpected OS %s",
+        "BallerinaVersionNotFound": "Unable to find Ballerina version %s for platform %s."
+    }
+}

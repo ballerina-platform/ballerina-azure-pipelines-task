@@ -1,0 +1,61 @@
+{
+    "manifestVersion": 1,
+    "id": "ballerina-devops-pipelines",
+    "name": "Ballerina",
+    "version": "1.0.0",
+    "publisher": "ballerina",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],
+    "description": "Ballerina Extension for Azure Devops Pipelines",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "links": {
+        "support": {
+            "uri": "https://github.com/ballerina-platform/ballerina-azure-pipelines-task/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/ballerina-platform/ballerina-azure-pipelines-task"
+    },
+    "tags": [
+        "ballerina",
+        "cloud",
+        "devops",
+        "cicd",
+        "programming-language"
+    ],
+    "icons": {
+        "default": "images/ballerina.png"
+    },
+    "files": [
+        {
+            "path": "UseBallerina"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "use-ballerina",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "UseBallerina"
+            }
+        }
+    ]
+}
