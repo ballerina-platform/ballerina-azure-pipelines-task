@@ -1,0 +1,37 @@
+{
+  "name": "useballerina",
+  "version": "1.0.0",
+  "description": "Use Ballerina",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ballerina",
+    "azure",
+    "devops",
+    "pipelines",
+    "cicd",
+    "cloud-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ballerina-platform/ballerina-azure-pipelines-task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ballerina-platform/ballerina-azure-pipelines-task/issues"
+  },
+  "author": "ballerina.io",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.0.0-preview",
+    "azure-pipelines-tool-lib": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.1",
+    "@types/q": "^1.5.5",
+    "sync-request": "^6.1.0"
+  }
+}
